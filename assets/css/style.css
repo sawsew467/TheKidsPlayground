@@ -32,6 +32,7 @@ a {
 .container {
   max-width: 1170px;
   margin: 0 auto;
+  padding: 0 2rem;
 }
 
 .header {
@@ -118,6 +119,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: stretch;
+  flex-wrap: wrap;
 }
 .category__item {
   padding: 0 3rem 4rem 3rem;
@@ -229,10 +231,10 @@ a {
 .figure-best__list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 .figure-best__item {
-  width: 50%;
-  max-width: 17rem;
+  width: calc(50% - 50px);
   padding-bottom: 5rem;
   margin-right: 5rem;
 }
@@ -299,6 +301,7 @@ a {
 .partner__list {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .connect {
@@ -377,6 +380,7 @@ a {
 .footer {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .footer__item {
   display: flex;

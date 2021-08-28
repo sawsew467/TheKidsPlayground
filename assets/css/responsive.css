@@ -1,0 +1,168 @@
+/* PC */
+@media (min-width: 1024px) {
+
+}
+
+/* Tablet & Mobile */
+@media (max-width: 1023px) {
+    
+}
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+    .banner {
+        margin-top: 10rem;
+    }
+    .category {
+        margin-top: 10rem;
+        margin-bottom: 10rem;
+    }
+    .category__item {
+        width: calc(50% - 15px);
+        margin-bottom: 3rem;
+    }
+    .category__img {
+        width: 100%;
+    }
+    .figure__item {
+        flex-direction: column;
+        margin-bottom: 5rem;
+    }
+    .figure__item:nth-child(even) {
+        flex-direction: column;
+    }
+    .figure__img {
+        width: 90%;
+    }
+    .figure__heading {
+        margin-top: 3.5rem;
+    }
+    .figure__content {
+        width: 100%;
+        text-align: center;
+    }
+    .figure__item:nth-child(odd) 
+    .figure__content {
+        padding-left: 0;
+    }
+    .figure__item:nth-child(even) 
+    .figure__content {
+        padding-right: 0rem;
+    }
+    .figure-aquapark__item:before {
+        left: 4rem;
+    }
+    .figure-best__list {
+        text-align: start;
+    }
+    .partner {
+        padding-top: 0;
+    }
+}
+/* Moblie */
+@media (max-width: 739px) {
+    .header {
+        padding-top: 1rem;
+    }
+    .header__menu {
+        display: none;
+    }
+    .banner {
+        margin-top: 5rem;
+    }
+    .category {
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+    }
+    .category__item {
+        width: 100%;
+        margin-bottom: 3rem;
+    }
+    .category__img {
+        width: 100%;
+    }
+    .figure__item {
+        flex-direction: column;
+        margin-bottom: 5rem;
+    }
+    .figure__item:nth-child(even) {
+        flex-direction: column;
+    }
+    .figure__img {
+        width: 90%;
+    }
+    .figure__heading {
+        margin-top: 3.5rem;
+    }
+    .figure__content {
+        width: 100%;
+        text-align: center;
+    }
+    .figure__item:nth-child(odd) 
+    .figure__content {
+        padding-left: 0;
+    }
+    .figure__item:nth-child(even) 
+    .figure__content {
+        padding-right: 0rem;
+    }
+    .figure-aquapark__item:before {
+        left: 4rem;
+    }
+    .figure-best__list {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+    .figure-aquapark__item {
+        margin-bottom: 2rem;
+    }
+    .figure-best__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+    .partner {
+        padding-top: 0;
+        margin-bottom: 5rem;
+    }
+    .partner__heading {
+        margin-bottom: 3rem;
+        padding-bottom: 3rem;
+    }
+    .partner__item {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 3rem;
+    }
+    .connect {
+        margin-bottom: 5rem;
+    }
+    .subcribe {
+        flex-direction: column;
+        margin-bottom: 3rem;
+        padding-bottom: 3rem;
+    }
+    .subcribe__heading {
+        width: 100%;
+        padding-right: 0;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    .subcribe__info {
+        width: 100%;
+    }
+    .subcribe__list {
+        margin-top: 2rem;
+    }
+    .footer__logo {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+    .footer__item a {
+        margin-bottom: 1rem;
+    }
+}

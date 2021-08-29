@@ -1,6 +1,11 @@
 /* PC */
 @media (min-width: 1024px) {
-
+    .mobile__bars {
+        display: none;
+    }
+    .mobile__menu {
+        display: none;
+    }
 }
 
 /* Tablet & Mobile */
@@ -10,6 +15,12 @@
 
 /* Tablet */
 @media (min-width: 740px) and (max-width: 1023px) {
+    .mobile__bars {
+        display: none;
+    }
+    .mobile__menu {
+        display: none;
+    }
     .banner {
         margin-top: 10rem;
     }
@@ -53,10 +64,25 @@
         left: 4rem;
     }
     .figure-best__list {
-        text-align: start;
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+    .figure-aquapark__item {
+        margin-bottom: 2rem;
+    }
+    .figure-best__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        transition:
     }
     .partner {
         padding-top: 0;
+    }
+    .subcribe__heading {
+        padding-right: 10rem;
     }
 }
 /* Moblie */
@@ -155,7 +181,7 @@
         width: 100%;
     }
     .subcribe__list {
-        margin-top: 2rem;
+        margin-top: 3rem;
     }
     .footer__logo {
         width: 100%;
@@ -164,5 +190,47 @@
     }
     .footer__item a {
         margin-bottom: 1rem;
+    }
+    .mobile__bars {
+        font-size: 2rem;
+        padding-top: 1rem;
+        cursor: pointer;
+    }
+    .mobile__menu {
+        padding-top: 5rem;
+        font-size: 1.6rem;
+        background: #fff;
+        z-index: 2;
+        position: fixed;
+        left: 100%;
+        top: 0;
+        bottom: 0;
+        width: 26rem;
+        text-align: center;
+        transition: left 0.7s;
+      }
+    .mobile__menu.active {
+        display: block;
+        left: calc(100% - 26rem);
+      }
+    .mobile__menu-item {
+        margin-bottom: 5rem;
+      }
+    .mobile__menu-item:hover a {
+        color: #ffc87a;
+    }
+    .mobile__menu-link {
+        padding: 2rem;
+        width: 100%;
+        transition: all 0.3s;
+    }
+    .header__overlay.active {
+        display: block;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.3);
     }
 }

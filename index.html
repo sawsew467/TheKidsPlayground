@@ -35,6 +35,26 @@
                     </li>
                 </ul>
             </nav>
+            <i class="fas fa-bars mobile__bars"></i>
+            <div class="mobile__menu">
+                <ul class="mobile__menu-list">
+                    <li class="mobile__menu-item">
+                        <a href="#" class="header__menu-link header__login">
+                            Login
+                        </a>
+                    </li>
+                    <li class="mobile__menu-item">
+                        <a href="#" class="mobile__menu-link">Events</a>
+                    </li>
+                    <li class="mobile__menu-item">
+                        <a href="#" class="mobile__menu-link">Pricing</a>
+                    </li>
+                    <li class="mobile__menu-item">
+                        <a href="#" class="mobile__menu-link">Blog</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="header__overlay none"></div>
         </header>
         <section class="banner container">
             <h1 class="banner__heading">The Kids Playground</h1>
@@ -262,5 +282,20 @@
             </div>
         </footer>
     </div>
+    <script>
+        var bars = document.querySelector('.mobile__bars');
+        var overlay = document.querySelector('.header__overlay');
+        var menu = document.querySelector('.mobile__menu');
+        
+        bars.onclick = function() {  
+            menu.classList.toggle('active');
+            overlay.classList.toggle('active');
+        }
+        
+        overlay.onclick = function() {
+            menu.classList.remove('active');
+            overlay.classList.toggle('active');
+        }
+    </script>
 </body>
 </html>
